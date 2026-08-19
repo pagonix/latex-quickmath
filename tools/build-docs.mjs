@@ -153,7 +153,6 @@ const titles = {
 };
 const ids = new Map(Object.entries(titles).map(([id, title]) => [title, id]));
 
-// The Hub requires the version folder to equal the manifest's version field.
 const version = "0.1.0";
 const pkgDir = join(root, "latex-quickmath", version);
 const pkg = join(pkgDir, "package.yml");
