@@ -24,7 +24,7 @@ matches:
   - trigger: ":emptyset "
     replace: "\\varnothing"
 
-  - trigger: ":set: "
+  - trigger: ":set "
     replace: "\\{ $|$ \\}"
 
   - trigger: ":setcondition "
