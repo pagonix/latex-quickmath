@@ -16,17 +16,15 @@ means, and how it renders.
 
 ## Install
 
-Once it's on the [espanso Hub](https://hub.espanso.org):
+Copy the package into your espanso packages folder and restart:
 
 ```sh
-espanso install latex-quickmath
+git clone https://github.com/pagonix/latex-quickmath.git
+cp -r latex-quickmath/latex-quickmath/0.1.0 "$(espanso path packages)/latex-quickmath"
+espanso restart
 ```
 
-Straight from this repo in the meantime:
-
-```sh
-espanso install latex-quickmath --git https://github.com/pagonix/latex-quickmath --external
-```
+Check it took with `espanso match list | grep bbR` — you should see `:bbR`.
 
 ## How it works
 
@@ -50,21 +48,6 @@ is left alone. Where a replacement has a `$|$`, that's where your cursor lands; 
 | Accents & fonts | accents, sub/superscripts, font commands |
 | Delimiters | abs, norm, floor, ceiling, auto-sized pairs |
 | Environments | align, cases, matrices |
-
-## Repository layout
-
-The package follows the espanso Hub structure, so it can be copied straight into a `espanso/hub`
-fork under `packages/`:
-
-```
-latex-quickmath/
-└── 0.1.0/                 # folder name matches `version` in the manifest
-    ├── _manifest.yml
-    ├── package.yml        # all 315 matches, grouped by "# -- Section --" comments
-    └── README.md
-docs/                      # the generated cheatsheet (GitHub Pages)
-tools/                     # cheatsheet generator + per-trigger descriptions
-```
 
 ## Cheatsheet
 
