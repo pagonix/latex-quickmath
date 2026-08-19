@@ -1,0 +1,15 @@
+{
+  ":abs ": ["Absolute value, using proper vertical delimiters.", "\\lvert x - y \\rvert"],
+  ":norm ": ["Norm of a vector or function.", "\\lVert x \\rVert_2"],
+  ":floor ": ["Floor — round down to an integer.", "\\lfloor 3.7 \\rfloor = 3"],
+  ":ceil ": ["Ceiling — round up to an integer.", "\\lceil 3.2 \\rceil = 4"],
+  ":angle ": ["Angle brackets — a generated object or a bra-ket.", "\\langle g \\rangle"],
+  ":lr ": ["Auto-sized parentheses.", "\\left( \\frac{a}{b} \\right)"],
+  ":lrc ": ["Auto-sized braces.", "\\left\\{ \\frac{a}{b} \\right\\}"],
+  ":lrs ": ["Auto-sized square brackets.", "\\left[ \\frac{a}{b} \\right]"],
+  ":lrabs ": ["Auto-sized absolute value bars.", "\\left\\lvert \\frac{a}{b} \\right\\rvert"],
+  ":lrnorm ": ["Auto-sized norm bars.", "\\left\\lVert \\frac{a}{b} \\right\\rVert"],
+  ":lrangle ": ["Auto-sized angle brackets.", "\\left\\langle \\frac{a}{b} \\right\\rangle"],
+  ":middle ": ["A divider that grows with its surrounding delimiters.", "\\left\\{ x \\middle| \\frac{x}{2} \\in \\mathbb{Z} \\right\\}", "\\left\\{ \\square \\middle| \\square \\right\\}"],
+  ":eval ": ["Evaluation bar, for substituting a bound.", "\\left. F(x) \\right|_{0}^{1}"]
+}

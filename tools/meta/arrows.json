@@ -1,0 +1,21 @@
+{
+  ":to ": ["Maps to — the standard arrow for a function's type.", "f \\colon X \\to Y"],
+  ":mapsto ": ["Sends an element to its image.", "x \\mapsto x^2"],
+  ":rightarrow ": ["Rightward arrow.", "a \\rightarrow b"],
+  ":leftarrow ": ["Leftward arrow.", "a \\leftarrow b"],
+  ":leftrightarrow ": ["Two-way arrow.", "a \\leftrightarrow b"],
+  ":longrightarrow ": ["Long rightward arrow, for labelled maps.", "X \\longrightarrow Y"],
+  ":longleftarrow ": ["Long leftward arrow.", "X \\longleftarrow Y"],
+  ":Rightarrow ": ["Double arrow — implication in a formula.", "p \\Rightarrow q"],
+  ":Leftarrow ": ["Reverse double arrow.", "p \\Leftarrow q"],
+  ":Leftrightarrow ": ["Double two-way arrow — equivalence.", "p \\Leftrightarrow q"],
+  ":uparrow ": ["Upward arrow — increases to, or a limit from below.", "x_n \\uparrow x"],
+  ":downarrow ": ["Downward arrow — decreases to.", "x_n \\downarrow x"],
+  ":hookrightarrow ": ["Injection — an embedding into a larger object.", "\\mathbb{Z} \\hookrightarrow \\mathbb{Q}"],
+  ":hookleftarrow ": ["Reverse injection arrow.", "\\mathbb{Q} \\hookleftarrow \\mathbb{Z}"],
+  ":twoheadrightarrow ": ["Surjection — the map is onto.", "G \\twoheadrightarrow G/N"],
+  ":rightsquigarrow ": ["Squiggly arrow — rewrites to, or leads to.", "x \\rightsquigarrow y"],
+  ":xrightarrow ": ["Extensible arrow with a label above it.", "a_n \\xrightarrow{n \\to \\infty} a"],
+  ":xleftarrow ": ["Extensible leftward arrow with a label.", "X \\xleftarrow{f} Y"],
+  ":xmapsto ": ["Extensible maps-to arrow with a label.", "x \\xmapsto{\\varphi} y"]
+}

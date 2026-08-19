@@ -1,0 +1,18 @@
+{
+  ":PP ": ["Probability of an event.", "\\mathbb{P}(A \\cup B)"],
+  ":PPcond ": ["Conditional probability, bar already in place.", "\\mathbb{P}(A \\mid B)"],
+  ":EE ": ["Expected value.", "\\mathbb{E}[X]"],
+  ":EEcond ": ["Conditional expectation.", "\\mathbb{E}[X \\mid \\mathcal{F}]"],
+  ":Var ": ["Variance.", "\\operatorname{Var}(X) = \\sigma^2"],
+  ":Cov ": ["Covariance of two random variables.", "\\operatorname{Cov}(X, Y)"],
+  ":normaldist ": ["Normal distribution with mean and variance.", "X \\sim \\mathcal{N}(\\mu, \\sigma^2)"],
+  ":borel ": ["Borel σ-algebra on a space.", "\\mathcal{B}(\\mathbb{R})"],
+  ":sigmaalgebra ": ["A σ-algebra of events.", "A \\in \\mathcal{F}"],
+  ":probspace ": ["A complete probability space triple.", "( \\Omega, \\mathcal{F}, \\mathbb{P} )"],
+  ":iid ": ["Independent and identically distributed.", "X_i \\overset{\\text{i.i.d.}}{\\sim} F"],
+  ":indep ": ["Independent of.", "X \\perp\\!\\!\\!\\perp Y"],
+  ":almostsurely ": ["Almost surely — with probability one.", "X_n \\to X \\text{ a.s. }"],
+  ":convd ": ["Convergence in distribution.", "X_n \\xrightarrow{d} X"],
+  ":convp ": ["Convergence in probability.", "X_n \\xrightarrow{\\mathbb{P}} X"],
+  ":convas ": ["Almost sure convergence.", "X_n \\xrightarrow{\\text{a.s.}} X"]
+}

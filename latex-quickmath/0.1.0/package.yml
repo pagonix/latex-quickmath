@@ -1,0 +1,1019 @@
+# latex-quickmath — quick LaTeX maths for espanso
+#
+# Every trigger starts with ":" and fires on the trailing space, so ":in "
+# expands while ":integral" is left alone. In a replacement, "$|$" marks where
+# the cursor lands afterwards; an empty "{  }" is a slot for you to fill in.
+#
+# Sections below are marked with "# -- Name --" comments; the cheatsheet at
+# https://pagonix.github.io/latex-quickmath/ is generated from them.
+
+matches:
+  # -- Brackets --
+
+  - trigger: ":c "
+    replace: "{ $|$ }"
+
+  - trigger: ":r "
+    replace: "( $|$ )"
+
+  - trigger: ":s "
+    replace: "[ $|$ ]"
+
+  # -- Set theory --
+
+  - trigger: ":emptyset "
+    replace: "\\varnothing"
+
+  - trigger: ":set: "
+    replace: "\\{ $|$ \\}"
+
+  - trigger: ":setcondition "
+    replace: "\\{ $|$ \\mid  \\}"
+
+  - trigger: ":cup "
+    replace: "\\cup"
+
+  - trigger: ":bigcup "
+    replace: "\\bigcup_{ $|$ }^{  }{  }"
+
+  - trigger: ":bigcupin "
+    replace: "\\bigcup_{ $|$ }{  }"
+
+  - trigger: ":cap "
+    replace: "\\cap"
+
+  - trigger: ":bigcap "
+    replace: "\\bigcap_{ $|$ }^{  }{  }"
+
+  - trigger: ":bigcapin "
+    replace: "\\bigcap_{ $|$ }{  }"
+
+  - trigger: ":setminus "
+    replace: "\\setminus"
+
+  - trigger: ":triangle "
+    replace: "\\triangle"
+
+  - trigger: ":times "
+    replace: "\\times"
+
+  - trigger: ":dotcup "
+    replace: "\\dot\\cup"
+
+  - trigger: ":sqcup "
+    replace: "\\sqcup"
+
+  - trigger: ":complement "
+    replace: "^\\mathrm{ C }"
+
+  - trigger: ":overline "
+    replace: "\\overline{ $|$ }"
+
+  - trigger: ":powerset "
+    replace: "\\mathcal{ P }( $|$ )"
+
+  - trigger: ":subset "
+    replace: "\\subset"
+
+  - trigger: ":subsetneq "
+    replace: "\\subsetneq"
+
+  - trigger: ":subseteq "
+    replace: "\\subseteq"
+
+  - trigger: ":supset "
+    replace: "\\supset"
+
+  - trigger: ":supsetneq "
+    replace: "\\supsetneq"
+
+  - trigger: ":supseteq "
+    replace: "\\supseteq"
+
+  - trigger: ":in "
+    replace: "\\in"
+
+  - trigger: ":ni "
+    replace: "\\ni"
+
+  - trigger: ":owns "
+    replace: "\\owns"
+
+  - trigger: ":notin "
+    replace: "\\notin"
+
+  - trigger: ":notni "
+    replace: "\\not\\ni"
+
+  - trigger: ":bbP "
+    replace: "\\mathbb{ P }"
+
+  - trigger: ":bbP "
+    replace: "\\mathbb{ P }"
+
+  - trigger: ":bbN "
+    replace: "\\mathbb{ N }"
+
+  - trigger: ":bbZ "
+    replace: "\\mathbb{ Z }"
+
+  - trigger: ":bbF "
+    replace: "\\mathbb{ F }"
+
+  - trigger: ":bbQ "
+    replace: "\\mathbb{ Q }"
+
+  - trigger: ":bbI "
+    replace: "\\mathbb{ I }"
+
+  - trigger: ":bbA "
+    replace: "\\mathbb{ A }"
+
+  - trigger: ":bbT "
+    replace: "\\mathbb{ T }"
+
+  - trigger: ":bbR "
+    replace: "\\mathbb{ R }"
+
+  - trigger: ":bbRR "
+    replace: "\\mathbb{ R }^2"
+
+  - trigger: ":bbRRR "
+    replace: "\\mathbb{ R }^3"
+
+  - trigger: ":bbRn "
+    replace: "\\mathbb{ R }^n"
+
+  - trigger: ":bb*R "
+    replace: "{}^*\\mathbb{ R }"
+
+  - trigger: ":bbC "
+    replace: "\\mathbb{ C }"
+
+  - trigger: ":bbH "
+    replace: "\\mathbb{ H }"
+
+  - trigger: ":bbO "
+    replace: "\\mathbb{ O }"
+
+  - trigger: ":bbS "
+    replace: "\\mathbb{ S }"
+
+  - trigger: ":bbK "
+    replace: "\\mathbb{ K }"
+
+  # -- Logic --
+
+  - trigger: ":forall "
+    replace: "\\forall"
+
+  - trigger: ":exists "
+    replace: "\\exists"
+
+  - trigger: ":existsone "
+    replace: "\\exists!"
+
+  - trigger: ":nexists "
+    replace: "\\nexists"
+
+  - trigger: ":land "
+    replace: "\\land"
+
+  - trigger: ":lor "
+    replace: "\\lor"
+
+  - trigger: ":lnot "
+    replace: "\\lnot"
+
+  - trigger: ":bigwedge "
+    replace: "\\bigwedge_{ $|$ }^{  }"
+
+  - trigger: ":bigwedgein "
+    replace: "\\bigwedge_{ $|$ }"
+
+  - trigger: ":bigvee "
+    replace: "\\bigvee_{ $|$ }^{  }"
+
+  - trigger: ":bigveein "
+    replace: "\\bigvee_{ $|$ }"
+
+  - trigger: ":implies "
+    replace: "\\implies"
+
+  - trigger: ":impliedby "
+    replace: "\\impliedby"
+
+  - trigger: ":iff "
+    replace: "\\iff"
+
+  - trigger: ":models "
+    replace: "\\models"
+
+  - trigger: ":vdash "
+    replace: "\\vdash"
+
+  - trigger: ":dashv "
+    replace: "\\dashv"
+
+  - trigger: ":top "
+    replace: "\\top"
+
+  - trigger: ":bot "
+    replace: "\\bot"
+
+  - trigger: ":therefore "
+    replace: "\\therefore"
+
+  - trigger: ":because "
+    replace: "\\because"
+
+  - trigger: ":suchthat "
+    replace: "\\text{ s.t. }"
+
+  - trigger: ":wlog "
+    replace: "\\text{ w.l.o.g. }"
+
+  - trigger: ":qed "
+    replace: "\\blacksquare"
+
+  # -- Relations --
+
+  - trigger: ":neq "
+    replace: "\\neq"
+
+  - trigger: ":leq "
+    replace: "\\leq"
+
+  - trigger: ":geq "
+    replace: "\\geq"
+
+  - trigger: ":ll "
+    replace: "\\ll"
+
+  - trigger: ":gg "
+    replace: "\\gg"
+
+  - trigger: ":approx "
+    replace: "\\approx"
+
+  - trigger: ":sim "
+    replace: "\\sim"
+
+  - trigger: ":simeq "
+    replace: "\\simeq"
+
+  - trigger: ":cong "
+    replace: "\\cong"
+
+  - trigger: ":equiv "
+    replace: "\\equiv"
+
+  - trigger: ":propto "
+    replace: "\\propto"
+
+  - trigger: ":doteq "
+    replace: "\\doteq"
+
+  - trigger: ":asymp "
+    replace: "\\asymp"
+
+  - trigger: ":defeq "
+    replace: "\\coloneqq"
+
+  - trigger: ":prec "
+    replace: "\\prec"
+
+  - trigger: ":preceq "
+    replace: "\\preceq"
+
+  - trigger: ":succ "
+    replace: "\\succ"
+
+  - trigger: ":succeq "
+    replace: "\\succeq"
+
+  - trigger: ":perp "
+    replace: "\\perp"
+
+  - trigger: ":parallel "
+    replace: "\\parallel"
+
+  - trigger: ":nparallel "
+    replace: "\\nparallel"
+
+  - trigger: ":mid "
+    replace: "\\mid"
+
+  - trigger: ":nmid "
+    replace: "\\nmid"
+
+  # -- Arrows --
+
+  - trigger: ":to "
+    replace: "\\to"
+
+  - trigger: ":mapsto "
+    replace: "\\mapsto"
+
+  - trigger: ":rightarrow "
+    replace: "\\rightarrow"
+
+  - trigger: ":leftarrow "
+    replace: "\\leftarrow"
+
+  - trigger: ":leftrightarrow "
+    replace: "\\leftrightarrow"
+
+  - trigger: ":longrightarrow "
+    replace: "\\longrightarrow"
+
+  - trigger: ":longleftarrow "
+    replace: "\\longleftarrow"
+
+  - trigger: ":Rightarrow "
+    replace: "\\Rightarrow"
+
+  - trigger: ":Leftarrow "
+    replace: "\\Leftarrow"
+
+  - trigger: ":Leftrightarrow "
+    replace: "\\Leftrightarrow"
+
+  - trigger: ":uparrow "
+    replace: "\\uparrow"
+
+  - trigger: ":downarrow "
+    replace: "\\downarrow"
+
+  - trigger: ":hookrightarrow "
+    replace: "\\hookrightarrow"
+
+  - trigger: ":hookleftarrow "
+    replace: "\\hookleftarrow"
+
+  - trigger: ":twoheadrightarrow "
+    replace: "\\twoheadrightarrow"
+
+  - trigger: ":rightsquigarrow "
+    replace: "\\rightsquigarrow"
+
+  - trigger: ":xrightarrow "
+    replace: "\\xrightarrow{ $|$ }"
+
+  - trigger: ":xleftarrow "
+    replace: "\\xleftarrow{ $|$ }"
+
+  - trigger: ":xmapsto "
+    replace: "\\xmapsto{ $|$ }"
+
+  # -- Symbols & spacing --
+
+  - trigger: ":cdot "
+    replace: "\\cdot"
+
+  - trigger: ":circ "
+    replace: "\\circ"
+
+  - trigger: ":ast "
+    replace: "\\ast"
+
+  - trigger: ":star "
+    replace: "\\star"
+
+  - trigger: ":bullet "
+    replace: "\\bullet"
+
+  - trigger: ":pm "
+    replace: "\\pm"
+
+  - trigger: ":mp "
+    replace: "\\mp"
+
+  - trigger: ":oplus "
+    replace: "\\oplus"
+
+  - trigger: ":otimes "
+    replace: "\\otimes"
+
+  - trigger: ":odot "
+    replace: "\\odot"
+
+  - trigger: ":cdots "
+    replace: "\\cdots"
+
+  - trigger: ":ldots "
+    replace: "\\ldots"
+
+  - trigger: ":vdots "
+    replace: "\\vdots"
+
+  - trigger: ":ddots "
+    replace: "\\ddots"
+
+  - trigger: ":degree "
+    replace: "^\\circ"
+
+  - trigger: ":prime "
+    replace: "^{ \\prime }"
+
+  - trigger: ":colon "
+    replace: "\\colon"
+
+  - trigger: ":quad "
+    replace: "\\quad"
+
+  - trigger: ":qquad "
+    replace: "\\qquad"
+
+  - trigger: ":thinspace "
+    replace: "\\,"
+
+  # -- Greek & letters --
+
+  - trigger: ":alpha "
+    replace: "\\alpha"
+
+  - trigger: ":beta "
+    replace: "\\beta"
+
+  - trigger: ":gamma "
+    replace: "\\gamma"
+
+  - trigger: ":delta "
+    replace: "\\delta"
+
+  - trigger: ":epsilon "
+    replace: "\\epsilon"
+
+  - trigger: ":varepsilon "
+    replace: "\\varepsilon"
+
+  - trigger: ":zeta "
+    replace: "\\zeta"
+
+  - trigger: ":eta "
+    replace: "\\eta"
+
+  - trigger: ":theta "
+    replace: "\\theta"
+
+  - trigger: ":vartheta "
+    replace: "\\vartheta"
+
+  - trigger: ":iota "
+    replace: "\\iota"
+
+  - trigger: ":kappa "
+    replace: "\\kappa"
+
+  - trigger: ":lambda "
+    replace: "\\lambda"
+
+  - trigger: ":mu "
+    replace: "\\mu"
+
+  - trigger: ":nu "
+    replace: "\\nu"
+
+  - trigger: ":xi "
+    replace: "\\xi"
+
+  - trigger: ":pi "
+    replace: "\\pi"
+
+  - trigger: ":varpi "
+    replace: "\\varpi"
+
+  - trigger: ":rho "
+    replace: "\\rho"
+
+  - trigger: ":varrho "
+    replace: "\\varrho"
+
+  - trigger: ":sigma "
+    replace: "\\sigma"
+
+  - trigger: ":varsigma "
+    replace: "\\varsigma"
+
+  - trigger: ":tau "
+    replace: "\\tau"
+
+  - trigger: ":upsilon "
+    replace: "\\upsilon"
+
+  - trigger: ":phi "
+    replace: "\\phi"
+
+  - trigger: ":varphi "
+    replace: "\\varphi"
+
+  - trigger: ":chi "
+    replace: "\\chi"
+
+  - trigger: ":psi "
+    replace: "\\psi"
+
+  - trigger: ":omega "
+    replace: "\\omega"
+
+  - trigger: ":Gamma "
+    replace: "\\Gamma"
+
+  - trigger: ":Delta "
+    replace: "\\Delta"
+
+  - trigger: ":Theta "
+    replace: "\\Theta"
+
+  - trigger: ":Lambda "
+    replace: "\\Lambda"
+
+  - trigger: ":Xi "
+    replace: "\\Xi"
+
+  - trigger: ":Pi "
+    replace: "\\Pi"
+
+  - trigger: ":Sigma "
+    replace: "\\Sigma"
+
+  - trigger: ":Upsilon "
+    replace: "\\Upsilon"
+
+  - trigger: ":Phi "
+    replace: "\\Phi"
+
+  - trigger: ":Psi "
+    replace: "\\Psi"
+
+  - trigger: ":Omega "
+    replace: "\\Omega"
+
+  - trigger: ":ell "
+    replace: "\\ell"
+
+  - trigger: ":hbar "
+    replace: "\\hbar"
+
+  - trigger: ":aleph "
+    replace: "\\aleph"
+
+  - trigger: ":beth "
+    replace: "\\beth"
+
+  # -- Analysis --
+
+  - trigger: ":infty "
+    replace: "\\infty"
+
+  - trigger: ":lim "
+    replace: "\\lim_{ $|$ }"
+
+  - trigger: ":limto "
+    replace: "\\lim_{ $|$ \\to  }"
+
+  - trigger: ":limsup "
+    replace: "\\limsup_{ $|$ }"
+
+  - trigger: ":liminf "
+    replace: "\\liminf_{ $|$ }"
+
+  - trigger: ":sup "
+    replace: "\\sup_{ $|$ }"
+
+  - trigger: ":inf "
+    replace: "\\inf_{ $|$ }"
+
+  - trigger: ":max "
+    replace: "\\max"
+
+  - trigger: ":min "
+    replace: "\\min"
+
+  - trigger: ":argmax "
+    replace: "\\operatorname*{ arg\\,max }_{ $|$ }"
+
+  - trigger: ":argmin "
+    replace: "\\operatorname*{ arg\\,min }_{ $|$ }"
+
+  - trigger: ":sum "
+    replace: "\\sum_{ $|$ }^{  }"
+
+  - trigger: ":sumin "
+    replace: "\\sum_{ $|$ }"
+
+  - trigger: ":suminf "
+    replace: "\\sum_{ $|$ }^{ \\infty }"
+
+  - trigger: ":prod "
+    replace: "\\prod_{ $|$ }^{  }"
+
+  - trigger: ":prodin "
+    replace: "\\prod_{ $|$ }"
+
+  - trigger: ":int "
+    replace: "\\int_{ $|$ }^{  }"
+
+  - trigger: ":intover "
+    replace: "\\int_{ $|$ }"
+
+  - trigger: ":oint "
+    replace: "\\oint_{ $|$ }"
+
+  - trigger: ":iint "
+    replace: "\\iint_{ $|$ }"
+
+  - trigger: ":iiint "
+    replace: "\\iiint_{ $|$ }"
+
+  - trigger: ":dd "
+    replace: "\\, \\mathrm{ d }"
+
+  - trigger: ":diff "
+    replace: "\\frac{ \\mathrm{ d } $|$ }{ \\mathrm{ d }  }"
+
+  - trigger: ":pdiff "
+    replace: "\\frac{ \\partial $|$ }{ \\partial  }"
+
+  - trigger: ":partial "
+    replace: "\\partial"
+
+  - trigger: ":nabla "
+    replace: "\\nabla"
+
+  - trigger: ":frac "
+    replace: "\\frac{ $|$ }{  }"
+
+  - trigger: ":sqrt "
+    replace: "\\sqrt{ $|$ }"
+
+  - trigger: ":nsqrt "
+    replace: "\\sqrt[ $|$ ]{  }"
+
+  - trigger: ":binom "
+    replace: "\\binom{ $|$ }{  }"
+
+  - trigger: ":exp "
+    replace: "\\exp( $|$ )"
+
+  - trigger: ":ln "
+    replace: "\\ln"
+
+  - trigger: ":log "
+    replace: "\\log_{ $|$ }"
+
+  - trigger: ":sin "
+    replace: "\\sin"
+
+  - trigger: ":cos "
+    replace: "\\cos"
+
+  - trigger: ":tan "
+    replace: "\\tan"
+
+  - trigger: ":bigo "
+    replace: "\\mathcal{ O }( $|$ )"
+
+  - trigger: ":smallo "
+    replace: "\\mathrm{ o }( $|$ )"
+
+  # -- Linear algebra --
+
+  - trigger: ":det "
+    replace: "\\det"
+
+  - trigger: ":tr "
+    replace: "\\operatorname{ tr }"
+
+  - trigger: ":rank "
+    replace: "\\operatorname{ rank }"
+
+  - trigger: ":dim "
+    replace: "\\dim"
+
+  - trigger: ":span "
+    replace: "\\operatorname{ span }( $|$ )"
+
+  - trigger: ":ker "
+    replace: "\\ker"
+
+  - trigger: ":image "
+    replace: "\\operatorname{ im }"
+
+  - trigger: ":diag "
+    replace: "\\operatorname{ diag }( $|$ )"
+
+  - trigger: ":proj "
+    replace: "\\operatorname{ proj }_{ $|$ }"
+
+  - trigger: ":id "
+    replace: "\\mathrm{ id }"
+
+  - trigger: ":transpose "
+    replace: "^\\mathsf{ T }"
+
+  - trigger: ":inverse "
+    replace: "^{ -1 }"
+
+  - trigger: ":dagger "
+    replace: "^\\dagger"
+
+  - trigger: ":inner "
+    replace: "\\langle $|$ ,  \\rangle"
+
+  # -- Algebra --
+
+  - trigger: ":hom "
+    replace: "\\operatorname{ Hom }( $|$ ,  )"
+
+  - trigger: ":endo "
+    replace: "\\operatorname{ End }( $|$ )"
+
+  - trigger: ":aut "
+    replace: "\\operatorname{ Aut }( $|$ )"
+
+  - trigger: ":gl "
+    replace: "\\operatorname{ GL }_{ $|$ }(  )"
+
+  - trigger: ":sl "
+    replace: "\\operatorname{ SL }_{ $|$ }(  )"
+
+  - trigger: ":sym "
+    replace: "\\mathfrak{ S }_{ $|$ }"
+
+  - trigger: ":normal "
+    replace: "\\trianglelefteq"
+
+  - trigger: ":semidirect "
+    replace: "\\rtimes"
+
+  - trigger: ":lsemidirect "
+    replace: "\\ltimes"
+
+  - trigger: ":zmod "
+    replace: "\\mathbb{ Z } / $|$ \\mathbb{ Z }"
+
+  - trigger: ":mod "
+    replace: "\\bmod"
+
+  - trigger: ":pmod "
+    replace: "\\pmod{ $|$ }"
+
+  - trigger: ":units "
+    replace: "^\\times"
+
+  - trigger: ":iso "
+    replace: "\\xrightarrow{ \\sim }"
+
+  - trigger: ":ord "
+    replace: "\\operatorname{ ord }( $|$ )"
+
+  - trigger: ":char "
+    replace: "\\operatorname{ char }( $|$ )"
+
+  - trigger: ":deg "
+    replace: "\\deg"
+
+  - trigger: ":gcd "
+    replace: "\\gcd"
+
+  - trigger: ":lcm "
+    replace: "\\operatorname{ lcm }"
+
+  # -- Probability --
+
+  - trigger: ":PP "
+    replace: "\\mathbb{ P }( $|$ )"
+
+  - trigger: ":PPcond "
+    replace: "\\mathbb{ P }( $|$ \\mid  )"
+
+  - trigger: ":EE "
+    replace: "\\mathbb{ E }[ $|$ ]"
+
+  - trigger: ":EEcond "
+    replace: "\\mathbb{ E }[ $|$ \\mid  ]"
+
+  - trigger: ":Var "
+    replace: "\\operatorname{ Var }( $|$ )"
+
+  - trigger: ":Cov "
+    replace: "\\operatorname{ Cov }( $|$ ,  )"
+
+  - trigger: ":normaldist "
+    replace: "\\mathcal{ N }( $|$ ,  )"
+
+  - trigger: ":borel "
+    replace: "\\mathcal{ B }( $|$ )"
+
+  - trigger: ":sigmaalgebra "
+    replace: "\\mathcal{ F }"
+
+  - trigger: ":probspace "
+    replace: "( \\Omega, \\mathcal{ F }, \\mathbb{ P } )"
+
+  - trigger: ":iid "
+    replace: "\\overset{ \\text{i.i.d.} }{ \\sim }"
+
+  - trigger: ":indep "
+    replace: "\\perp\\!\\!\\!\\perp"
+
+  - trigger: ":almostsurely "
+    replace: "\\text{ a.s. }"
+
+  - trigger: ":convd "
+    replace: "\\xrightarrow{ d }"
+
+  - trigger: ":convp "
+    replace: "\\xrightarrow{ \\mathbb{ P } }"
+
+  - trigger: ":convas "
+    replace: "\\xrightarrow{ \\text{a.s.} }"
+
+  # -- Accents & fonts --
+
+  - trigger: ":hat "
+    replace: "\\hat{ $|$ }"
+
+  - trigger: ":widehat "
+    replace: "\\widehat{ $|$ }"
+
+  - trigger: ":bar "
+    replace: "\\bar{ $|$ }"
+
+  - trigger: ":tilde "
+    replace: "\\tilde{ $|$ }"
+
+  - trigger: ":widetilde "
+    replace: "\\widetilde{ $|$ }"
+
+  - trigger: ":vec "
+    replace: "\\vec{ $|$ }"
+
+  - trigger: ":dot "
+    replace: "\\dot{ $|$ }"
+
+  - trigger: ":ddot "
+    replace: "\\ddot{ $|$ }"
+
+  - trigger: ":underline "
+    replace: "\\underline{ $|$ }"
+
+  - trigger: ":underbrace "
+    replace: "\\underbrace{ $|$ }_{  }"
+
+  - trigger: ":overbrace "
+    replace: "\\overbrace{ $|$ }^{  }"
+
+  - trigger: ":overset "
+    replace: "\\overset{ $|$ }{  }"
+
+  - trigger: ":underset "
+    replace: "\\underset{ $|$ }{  }"
+
+  - trigger: ":sub "
+    replace: "_{ $|$ }"
+
+  - trigger: ":pow "
+    replace: "^{ $|$ }"
+
+  - trigger: ":text "
+    replace: "\\text{ $|$ }"
+
+  - trigger: ":rm "
+    replace: "\\mathrm{ $|$ }"
+
+  - trigger: ":bf "
+    replace: "\\mathbf{ $|$ }"
+
+  - trigger: ":it "
+    replace: "\\mathit{ $|$ }"
+
+  - trigger: ":sf "
+    replace: "\\mathsf{ $|$ }"
+
+  - trigger: ":tt "
+    replace: "\\mathtt{ $|$ }"
+
+  - trigger: ":cal "
+    replace: "\\mathcal{ $|$ }"
+
+  - trigger: ":frak "
+    replace: "\\mathfrak{ $|$ }"
+
+  - trigger: ":bb "
+    replace: "\\mathbb{ $|$ }"
+
+  # -- Delimiters --
+
+  - trigger: ":abs "
+    replace: "\\lvert $|$ \\rvert"
+
+  - trigger: ":norm "
+    replace: "\\lVert $|$ \\rVert"
+
+  - trigger: ":floor "
+    replace: "\\lfloor $|$ \\rfloor"
+
+  - trigger: ":ceil "
+    replace: "\\lceil $|$ \\rceil"
+
+  - trigger: ":angle "
+    replace: "\\langle $|$ \\rangle"
+
+  - trigger: ":lr "
+    replace: "\\left( $|$ \\right)"
+
+  - trigger: ":lrc "
+    replace: "\\left\\{ $|$ \\right\\}"
+
+  - trigger: ":lrs "
+    replace: "\\left[ $|$ \\right]"
+
+  - trigger: ":lrabs "
+    replace: "\\left\\lvert $|$ \\right\\rvert"
+
+  - trigger: ":lrnorm "
+    replace: "\\left\\lVert $|$ \\right\\rVert"
+
+  - trigger: ":lrangle "
+    replace: "\\left\\langle $|$ \\right\\rangle"
+
+  - trigger: ":middle "
+    replace: "\\middle|"
+
+  - trigger: ":eval "
+    replace: "\\left. $|$ \\right|_{  }"
+
+  # -- Environments --
+
+  - trigger: ":equation "
+    replace: |-
+      \begin{equation}
+        $|$
+      \end{equation}
+
+  - trigger: ":align "
+    replace: |-
+      \begin{align}
+        $|$
+      \end{align}
+
+  - trigger: ":align* "
+    replace: |-
+      \begin{align*}
+        $|$
+      \end{align*}
+
+  - trigger: ":gather "
+    replace: |-
+      \begin{gather}
+        $|$
+      \end{gather}
+
+  - trigger: ":cases "
+    replace: |-
+      \begin{cases}
+        $|$ & \text{if }  \\
+         & \text{else}
+      \end{cases}
+
+  - trigger: ":matrix "
+    replace: |-
+      \begin{matrix}
+        $|$
+      \end{matrix}
+
+  - trigger: ":pmatrix "
+    replace: |-
+      \begin{pmatrix}
+        $|$
+      \end{pmatrix}
+
+  - trigger: ":bmatrix "
+    replace: |-
+      \begin{bmatrix}
+        $|$
+      \end{bmatrix}
+
+  - trigger: ":vmatrix "
+    replace: |-
+      \begin{vmatrix}
+        $|$
+      \end{vmatrix}
+
+  - trigger: ":Vmatrix "
+    replace: |-
+      \begin{Vmatrix}
+        $|$
+      \end{Vmatrix}
+
+  - trigger: ":smallmatrix "
+    replace: "\\begin{smallmatrix} $|$ \\end{smallmatrix}"
+
+  - trigger: ":array "
+    replace: |-
+      \begin{array}{ $|$ }
+
+      \end{array}

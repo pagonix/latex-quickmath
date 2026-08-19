@@ -1,0 +1,16 @@
+{
+  ":det ": ["Determinant.", "\\det(A) \\neq 0"],
+  ":tr ": ["Trace — the sum of the diagonal entries.", "\\operatorname{tr}(A) = \\sum_i a_{ii}"],
+  ":rank ": ["Rank — the dimension of the image.", "\\operatorname{rank}(A) = n"],
+  ":dim ": ["Dimension of a vector space.", "\\dim V = n"],
+  ":span ": ["Span — all linear combinations of the given vectors.", "\\operatorname{span}(v_1, v_2)"],
+  ":ker ": ["Kernel — the vectors sent to zero.", "\\ker(f) = \\{ 0 \\}"],
+  ":image ": ["Image — the set of values actually attained.", "\\operatorname{im}(f) \\subseteq W"],
+  ":diag ": ["Diagonal matrix built from the listed entries.", "\\operatorname{diag}(\\lambda_1, \\lambda_2)"],
+  ":proj ": ["Projection onto a subspace.", "\\operatorname{proj}_{U}(v)"],
+  ":id ": ["Identity map or identity matrix.", "f \\circ f^{-1} = \\mathrm{id}"],
+  ":transpose ": ["Transpose, as an upright sans-serif superscript T.", "A^\\mathsf{T} A"],
+  ":inverse ": ["Inverse as a −1 superscript.", "A^{-1} A = I"],
+  ":dagger ": ["Dagger — conjugate transpose or adjoint.", "A^\\dagger"],
+  ":inner ": ["Inner product of two vectors.", "\\langle u, v \\rangle = 0"]
+}

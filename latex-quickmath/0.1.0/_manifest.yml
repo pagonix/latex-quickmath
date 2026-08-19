@@ -1,0 +1,7 @@
+name: "latex-quickmath"
+title: "LaTeX Quickmath"
+description: "Type LaTeX maths fast — 315 triggers for set theory, logic, analysis, algebra, probability, Greek letters and matrix environments."
+version: "0.1.0"
+author: "Jan-Philipp Pfaue"
+tags: ["latex", "math", "mathematics", "science", "writing"]
+homepage: "https://github.com/pagonix/latex-quickmath"

@@ -1,0 +1,22 @@
+{
+  ":cdot ": ["Centred multiplication dot.", "a \\cdot b"],
+  ":circ ": ["Composition of maps, or a ring operation.", "(g \\circ f)(x)"],
+  ":ast ": ["Asterisk operator — convolution, adjoint, or a free slot.", "f \\ast g"],
+  ":star ": ["Star operator — a generic binary operation.", "a \\star b"],
+  ":bullet ": ["Filled bullet — a placeholder argument.", "\\langle \\bullet, \\bullet \\rangle"],
+  ":pm ": ["Plus or minus.", "x = 2 \\pm 0.1"],
+  ":mp ": ["Minus or plus — the opposite sign to a nearby ±.", "a \\pm b \\mp c"],
+  ":oplus ": ["Direct sum, or exclusive or.", "V \\oplus W"],
+  ":otimes ": ["Tensor product.", "V \\otimes W"],
+  ":odot ": ["Circled dot — Hadamard or elementwise product.", "A \\odot B"],
+  ":cdots ": ["Centred ellipsis, for use between operators.", "a_1 + \\cdots + a_n"],
+  ":ldots ": ["Baseline ellipsis, for use between commas.", "a_1, \\ldots, a_n"],
+  ":vdots ": ["Vertical ellipsis, for columns in a matrix.", "\\vdots"],
+  ":ddots ": ["Diagonal ellipsis, for a matrix diagonal.", "\\ddots"],
+  ":degree ": ["Degree sign as a superscript.", "90^\\circ"],
+  ":prime ": ["Prime mark — a derivative or a related object.", "f^{\\prime}(x)"],
+  ":colon ": ["Colon with function-notation spacing.", "f \\colon X \\to Y"],
+  ":quad ": ["One quad of horizontal space.", "a = b \\quad \\text{for all } x"],
+  ":qquad ": ["Two quads of horizontal space.", "a = b \\qquad c = d"],
+  ":thinspace ": ["Thin space — fine spacing adjustment.", "\\mathbb{R}\\,^n"]
+}

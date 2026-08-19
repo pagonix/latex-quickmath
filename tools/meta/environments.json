@@ -1,0 +1,14 @@
+{
+  ":equation ": ["A single numbered display equation.", "\\begin{equation}\n  E = mc^2\n\\end{equation}", "E = mc^2"],
+  ":align ": ["Multi-line equations aligned at the & marks, numbered.", "\\begin{align}\n  (a+b)^2 &= a^2 + 2ab + b^2 \\\\\n  &= a^2 + b^2 + 2ab\n\\end{align}", "\\begin{aligned}(a+b)^2 &= a^2 + 2ab + b^2 \\\\ &= a^2 + b^2 + 2ab\\end{aligned}"],
+  ":align* ": ["The same alignment, without equation numbers.", "\\begin{align*}\n  f(x) &= x^2 \\\\\n  f'(x) &= 2x\n\\end{align*}", "\\begin{aligned}f(x) &= x^2 \\\\ f'(x) &= 2x\\end{aligned}"],
+  ":gather ": ["Several centred equations, each on its own line.", "\\begin{gather}\n  a = b \\\\\n  c = d\n\\end{gather}", "\\begin{gathered}a = b \\\\ c = d\\end{gathered}"],
+  ":cases ": ["A case distinction with conditions on the right.", "\\begin{cases}\n  x & \\text{if } x \\geq 0 \\\\\n  -x & \\text{else}\n\\end{cases}", "|x| = \\begin{cases} x & \\text{if } x \\geq 0 \\\\ -x & \\text{else} \\end{cases}"],
+  ":matrix ": ["A matrix body with no delimiters.", "\\begin{matrix}\n  a & b \\\\\n  c & d\n\\end{matrix}", "\\begin{matrix} a & b \\\\ c & d \\end{matrix}"],
+  ":pmatrix ": ["Matrix in round brackets — the usual choice.", "\\begin{pmatrix}\n  a & b \\\\\n  c & d\n\\end{pmatrix}", "\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}"],
+  ":bmatrix ": ["Matrix in square brackets.", "\\begin{bmatrix}\n  a & b \\\\\n  c & d\n\\end{bmatrix}", "\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}"],
+  ":vmatrix ": ["Single bars — a determinant.", "\\begin{vmatrix}\n  a & b \\\\\n  c & d\n\\end{vmatrix}", "\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}"],
+  ":Vmatrix ": ["Double bars — an operator norm.", "\\begin{Vmatrix}\n  a & b \\\\\n  c & d\n\\end{Vmatrix}", "\\begin{Vmatrix} a & b \\\\ c & d \\end{Vmatrix}"],
+  ":smallmatrix ": ["A tiny matrix that fits inside a line of text.", "\\begin{smallmatrix} a & b \\\\ c & d \\end{smallmatrix}", "\\begin{smallmatrix} a & b \\\\ c & d \\end{smallmatrix}"],
+  ":array ": ["A general table, with a column specification.", "\\begin{array}{cc}\n  a & b \\\\\n  c & d\n\\end{array}", "\\begin{array}{cc} a & b \\\\ c & d \\end{array}"]
+}

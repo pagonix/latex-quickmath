@@ -1,0 +1,5 @@
+{
+  ":c ": ["A pair of curly braces — the workhorse group.", "x^{n+1}"],
+  ":r ": ["A pair of round brackets.", "f(x + y)"],
+  ":s ": ["A pair of square brackets.", "\\mathbb{E}[X]"]
+}

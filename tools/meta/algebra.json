@@ -1,0 +1,21 @@
+{
+  ":hom ": ["The set of homomorphisms between two objects.", "\\operatorname{Hom}(V, W)"],
+  ":endo ": ["Endomorphisms — homomorphisms of an object to itself.", "\\operatorname{End}(V)"],
+  ":aut ": ["The automorphism group.", "\\operatorname{Aut}(G)"],
+  ":gl ": ["General linear group — invertible matrices.", "\\operatorname{GL}_{n}(\\mathbb{R})"],
+  ":sl ": ["Special linear group — determinant one.", "\\operatorname{SL}_{2}(\\mathbb{Z})"],
+  ":sym ": ["Symmetric group on n letters.", "\\mathfrak{S}_{n}"],
+  ":normal ": ["Normal subgroup, or a two-sided ideal.", "N \\trianglelefteq G"],
+  ":semidirect ": ["Semidirect product, normal factor on the left.", "N \\rtimes H"],
+  ":lsemidirect ": ["Semidirect product, normal factor on the right.", "H \\ltimes N"],
+  ":zmod ": ["The integers modulo n.", "\\mathbb{Z} / n \\mathbb{Z}"],
+  ":mod ": ["Binary mod operator inside an expression.", "a \\bmod n"],
+  ":pmod ": ["Parenthesised modulus after a congruence.", "a \\equiv b \\pmod{n}"],
+  ":units ": ["Unit group, written as a × superscript.", "R^\\times"],
+  ":iso ": ["Isomorphism arrow with a tilde above it.", "V \\xrightarrow{\\sim} W"],
+  ":ord ": ["Order of a group element.", "\\operatorname{ord}(g) = 6"],
+  ":char ": ["Characteristic of a ring or field.", "\\operatorname{char}(\\mathbb{F}_p) = p"],
+  ":deg ": ["Degree of a polynomial or field extension.", "\\deg f = 3"],
+  ":gcd ": ["Greatest common divisor.", "\\gcd(a, b) = 1"],
+  ":lcm ": ["Least common multiple.", "\\operatorname{lcm}(4, 6) = 12"]
+}
