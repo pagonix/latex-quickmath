@@ -1,6 +1,6 @@
 {
   ":emptyset ": ["The empty set — the set containing no elements.", "A \\cap B = \\varnothing"],
-  ":set: ": ["Set literal: elements listed inside braces.", "\\{ 1, 2, 3 \\}"],
+  ":set ": ["Set literal: elements listed inside braces.", "\\{ 1, 2, 3 \\}"],
   ":setcondition ": ["Set-builder notation: elements satisfying a condition.", "\\{ x \\in \\mathbb{N} \\mid x > 3 \\}"],
   ":cup ": ["Union — everything in either set.", "A \\cup B"],
   ":bigcup ": ["Union over a range with lower and upper bound.", "\\bigcup_{i=1}^{n} A_i"],
